@@ -58,4 +58,6 @@ end
 function somar(a, b) -- Não precisamos de um indicador de inicio de bloco como then ou do 
   return a + b       
 end
-print(somar(15,35)) 
+print(somar(15,35)) -- output: 50
+
+-- By BlackReaper <3
