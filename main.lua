@@ -1,63 +1,60 @@
--- Aprendendo lua em 10 minutos ou menos, by BlackReaper
+-- LuaScript é uma linguagem simples que se assemelha muito ao Python.
+-- Nesta primeira lição, vamos aprender sobre tipos de variáveis e como declará-las.
+-- Comentários em Lua começam com "--".
 
--- LuaScript É simples, se aproxima muito a Python.
+-- Variáveis e declaração:
+nome = "Chocolate" -- String
+descricao = [[
+Eu gosto de chocolate.
+]] -- String com quebra de linha (Dentro de [[]], não é necessário usar "" para indicar string)
+quantidade = 1024 -- Inteiro
+preco = 1.5 -- Float
+disponivel = false -- Booleano
+itens = {"monitor", "mesa", "computador", "teclado"} -- Array (Lista)
 
--- Primeira lição, comentarios começam com "--" 
+-- Todas as variáveis definidas aqui são globais.
+-- Podemos imprimir na tela, assim como em Python, usando a função print().
+-- Também podemos concatenar strings:
 
--- Tipos de variaveis, e como declarar:
+print("Eu gosto de", nome) -- Saída: Eu gosto de Chocolate (Isso ocorre porque, em Lua, a vírgula causa uma "TAB")
+print("Eu gosto de " .. nome) -- Em Lua, usamos .. como o "+" em Python. Saída: Eu gosto de Chocolate
+print(descricao)
 
-a = "Chocolate" -- String
-a2 = [[
-  Eu Gosto de chocolate 
-]] -- String com quebra de linha (Dentro de [[]], não precisa utilizar "" para sinalizar string)
-b = 1024   -- Inteiro
-c = 1.5    -- Float
-d = false  -- Booleano
-e = {"monitor","mesa","computador","teclado"} -- Array (Lista)
+-- Também podemos imprimir inteiros.
 
--- Todas as variaveis definidas aqui, são globais
+print(quantidade .. preco) -- Saída: 10241.5
+print(quantidade + preco) -- Saída: 1025.5
+print("Quantidade + Preço = " .. quantidade + preco) -- Saída: Quantidade + Preço = 1025.5
 
--- Printamos igualmente ao Python, utilizando print(), assim como podemos concatenar strings:
+-- E booleanos.
 
-print("Eu gosto de", a) -- output: Eu gosto de    Chocolate  (Isto por que, em lua a virgua da "TAB")
-print("Eu gosto de" .. a) -- Em lua, utilizamos .. como o "+" no Python, output: Eu gosto deChocolate
-print(a2)
-
--- Assim como podemos printar Inteiros também.
-
-print(b .. c) -- 10241.5
-print(b+c) -- 1025.5
-print("B + C = " .. b+c) -- B + C = 1025.5
-
--- E booleanos
-
-print(d) -- false
+print(disponivel) -- Saída: false
 
 -- Condicionais:
 
-if d then -- Aqui, se utiliza *then* para indicar o começo de um bloco, e não se utiliza ":"
-  print("Entrou no bloco")
-else 
-  print("Não entrou")
-end -- Sempre bote o end, sinalizando que acabou essa serie de condicionais
+if disponivel then -- Em Lua, usamos "then" para indicar o início de um bloco e não usamos ":"
+print("Entrou no bloco")
+else
+print("Não entrou")
+end -- Sempre inclua o "end" para sinalizar o final da sequência de condicionais.
 
-c = 4
-for i=1, c do -- Em for, repeat, while, utiliza-se o do
-  print(i)    -- Para i(inteiro) = 1 em c (utiliza-se virgula), faça: print(inteiro)  
-end  
+contador = 4
+for i = 1, contador do -- Em for, repeat e while, usamos "do" para indicar o início do bloco.
+print(i) -- Para i (inteiro) igual a 1 até contador, faça: print(i)
+end
 
-c = 5
+contador = 5
 i = 1
-while c >= i do
-  print(i)
-  i = i+1
-end 
+while contador >= i do
+print(i)
+i = i + 1
+end
 
 -- Funções:
 
-function somar(a, b) -- Não precisamos de um indicador de inicio de bloco como then ou do 
-  return a + b       
+function somar(a, b) -- Não é necessário indicar o início do bloco com "then" ou "do".
+return a + b
 end
-print(somar(15,35)) -- output: 50
+print(somar(15, 35)) -- Saída: 50
 
--- By BlackReaper <3
+-- Por BlackReaper <3
