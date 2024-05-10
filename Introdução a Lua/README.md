@@ -1,45 +1,117 @@
-# Módulo 1: Introdução à Lua
+# Introdução à Lua
 
 Neste módulo, você será introduzido à linguagem de programação Lua e aprenderá os conceitos básicos para começar a escrever seus primeiros programas em Lua.
 
-## Aula 1: Visão geral da linguagem Lua
+## Visão geral da linguagem Lua
 
 Lua é uma linguagem de programação leve, rápida e poderosa que pode ser utilizada em diversos contextos, como desenvolvimento de jogos, automação de tarefas e até mesmo como linguagem de script embutida em aplicativos.
 
-Nesta aula, você conhecerá a história e a origem do Lua, suas principais características e casos de uso. Veremos como o Lua se destaca pela sua simplicidade, flexibilidade e eficiência.
+Lua é uma linguagem de programação interpretada, o que significa que seu código é executado linha por linha por um programa chamado de interpretador, sem a necessidade de compilação prévia. Trata-se de uma linguagem de script em alto nível, o que a torna mais acessível para programadores de diversos níveis de experiência.
 
-## Aula 2: Configuração do ambiente
+Uma das características marcantes do Lua é sua [tipagem dinâmica](https://www.alura.com.br/artigos/o-que-sao-as-tipagens-estatica-e-dinamica-em-programacao), o que significa que as variáveis não precisam ser declaradas com um tipo específico e podem mudar de tipo durante a execução do programa. Isso proporciona uma flexibilidade significativa no desenvolvimento de software.
 
-Antes de começarmos a programar em Lua, é necessário configurar o ambiente de desenvolvimento. Nesta aula, veremos como instalar o interpretador Lua em diferentes sistemas operacionais, como Windows, macOS e Linux. Além disso, discutiremos as opções de ambientes de desenvolvimento integrados (IDEs) disponíveis para Lua.
+Além disso, o Lua é considerado uma [linguagem multiparadigma](https://pt.wikipedia.org/wiki/Linguagem_de_programa%C3%A7%C3%A3o_multiparadigma), o que significa que suporta diferentes estilos de programação, como programação procedural, orientada a objetos e funcional. Essa versatilidade permite aos desenvolvedores escolherem o paradigma mais adequado para resolver problemas específicos, tornando o Lua uma ferramenta poderosa em uma variedade de cenários de desenvolvimento de software.
 
-Após concluir esta aula, você terá o ambiente pronto para começar a escrever e executar seus primeiros programas em Lua.
+Com uma sintaxe simples e clara, o Lua se destaca pela sua facilidade de aprendizado e uso. Essa simplicidade não compromete sua eficiência, tornando-a uma escolha popular para o desenvolvimento de jogos, automação de tarefas, desenvolvimento web e muito mais.
 
-## Aula 3: Executando programas Lua
+Em resumo, Lua é uma linguagem versátil, eficiente e acessível, adequada para uma ampla gama de aplicações e níveis de experiência em programação.
 
-Nesta aula, aprenderemos como executar programas Lua de diferentes maneiras. Veremos como utilizar o interpretador interativo do Lua, também conhecido como Lua REPL (Read-Eval-Print Loop), que nos permite experimentar e testar trechos de código Lua em tempo real.
+## Configuração do ambiente
 
-Além disso, veremos como executar scripts Lua a partir de arquivos. Aprenderemos a criar um arquivo de script Lua, como executá-lo e exploraremos algumas boas práticas de execução de scripts Lua.
+Antes de começarmos a programar em Lua, é necessário configurar o ambiente de desenvolvimento. Vamos ver como instalar o interpretador Lua nos diferentes sistemas operacionais, Windows e Linux.
 
-## Pré-requisitos
+### Windows
 
-- Conhecimentos básicos de programação (recomendado, mas não obrigatório)
+Para configurar o ambiente de desenvolvimento Lua no Windows, siga estes passos:
 
-## Como usar este repositório
+1. **Baixe o interpretador Lua:**
+   - Acesse o site oficial de downloads do Lua em [lua.org/download.html](https://www.lua.org/download.html).
+   - Baixe a versão mais recente do interpretador Lua para Windows.
 
-1. Clone ou faça o download deste repositório para o seu ambiente de desenvolvimento.
+2. **Instale o interpretador Lua:**
+   - Após o download, execute o instalador.
+   - Siga as instruções do instalador para concluir a instalação.
 
-2. Navegue até a pasta correspondente ao Módulo 1.
+3. **Configuração do PATH (opcional):**
+   - Se desejar executar scripts Lua de qualquer diretório no prompt de comando, adicione o diretório de instalação do Lua ao PATH.
 
-3. Leia o conteúdo do arquivo README.md para obter uma introdução detalhada ao módulo e às aulas contidas nele.
+### Linux
 
-4. Acesse cada aula individualmente para ler o conteúdo e entender os tópicos abordados.
+Para configurar o ambiente de desenvolvimento Lua no Linux, siga estes passos:
 
-5. Explore os exemplos de código fornecidos em cada aula. Você pode executá-los em seu ambiente Lua para praticar e experimentar.
+1. **Instalação via gerenciador de pacotes:**
+   - Em distribuições baseadas em Debian/Ubuntu, use o apt:
+     ```bash
+     sudo apt-get update
+     sudo apt-get install lua5.3
+     ```
+   - Em distribuições baseadas em Red Hat/Fedora, use o dnf ou yum:
+     ```bash
+     sudo dnf install lua
+     ```
+     ou
+     ```bash
+     sudo yum install lua
+     ```
 
-6. Divirta-se aprendendo e explorando a linguagem de programação Lua!
+2. **Verifique a instalação:**
+   - Após a instalação, verifique se o Lua está corretamente instalado executando o seguinte comando no terminal:
+     ```bash
+     lua -v
+     ```
+   - Isso deve exibir a versão do interpretador Lua instalada.
+
+3. **Configuração do ambiente (opcional):**
+   - Para facilitar o acesso ao interpretador Lua, você pode adicionar o diretório de instalação aos seus caminhos de busca.
+   - Você pode adicionar o diretório ao PATH editando o arquivo `~/.bashrc` ou `~/.bash_profile` e adicionando a linha:
+     ```bash
+     export PATH="/usr/bin/lua5.3:$PATH"
+     ```
+   - Substitua `lua5.3` pelo diretório correto, se necessário.
+
+**Instalação de pacotes Lua (opcional):**
+    - Se desejar, você pode usar o LuaRocks, um gerenciador de pacotes Lua, para instalar e gerenciar pacotes Lua adicionais.
+   - Para instalar o LuaRocks, siga as instruções em [luarocks.org](https://luarocks.org/).
+
+## Executando programas Lua
+
+Durante todos os artigos, vamos considerar o uso no Linux. Para executar arquivos Lua no Linux é simples: 
+
+1. **Crie um arquivo Lua:**
+   - Abra seu editor de texto favorito e crie um novo arquivo com a extensão `.lua`. Por exemplo, `meu_programa.lua`.
+
+2. **Escreva seu código Lua:**
+   - Escreva o código Lua dentro do arquivo criado. Por exemplo:
+     ```lua
+     print("Olá, mundo!")
+     ```
+
+3. **Salve o arquivo:**
+   - Salve o arquivo com o código Lua.
+
+4. **Abra o terminal:**
+   - Abra o terminal no Linux.
+
+5. **Navegue até o diretório do arquivo Lua:**
+   - Use o comando `cd` para navegar até o diretório onde o arquivo Lua está localizado. Por exemplo:
+     ```bash
+     cd /caminho/do/diretorio
+     ```
+
+6. **Execute o programa Lua:**
+   - No terminal, use o comando `lua` seguido do nome do arquivo Lua que você deseja executar. Por exemplo:
+     ```bash
+     lua meu_programa.lua
+     ```
+
+7. **Veja a saída:**
+   - O programa Lua será executado e a saída será exibida no terminal. No exemplo acima, a saída será `Olá, mundo!`.
+
+# Sintaxe básica
+
+Para saber mais, por favor prossiga para sessão de [Sintaxe básica]().
 
 ## Recursos adicionais
 
 - [Documentação oficial do Lua](https://www.lua.org/docs.html): Acesse a documentação oficial para obter mais informações sobre a linguagem Lua.
-
 - [Lua Tutorial](https://www.lua.org/manual/5.4/manual.html): Um tutorial abrangente do Lua para ajudá-lo a aprofundar seus conhecimentos na linguagem.
