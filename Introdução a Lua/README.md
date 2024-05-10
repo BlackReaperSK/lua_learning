@@ -102,9 +102,9 @@ Durante todos os artigos, vamos considerar o uso no Linux. Para executar arquivo
      ```
    - O programa Lua será executado e a saída será exibida no terminal. No exemplo acima, a saída será `Olá, mundo!`.
 
-# Sintaxe básica
+# !! Proximo README: Sintaxe básica
 
-Para saber mais, por favor prossiga para sessão de [Sintaxe básica]().
+Para saber mais, por favor prossiga para sessão de [Sintaxe básica](Introdução%20a%20Lua/SINTAXE.md).
 
 ## Recursos adicionais
 
