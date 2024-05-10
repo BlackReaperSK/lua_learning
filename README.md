@@ -27,6 +27,7 @@ O guia está organizado em tópicos, abrangendo os conceitos essenciais da lingu
    - Ambiente de execução
    - Sintaxe básica
 
+
 2. Tipos de Dados
    - Números e operações matemáticas
    - Strings e manipulação de texto
