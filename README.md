@@ -1,15 +1,32 @@
 # 🌙 Lua - Guia Básico
 
-Este repositório contém um guia básico de Lua, destinado a ajudar as pessoas a aprenderem os conceitos fundamentais da linguagem rapidamente. Lua é uma linguagem de programação leve, fácil de aprender e extremamente versátil, sendo amplamente utilizada em jogos, aplicações embarcadas, scripts e muito mais.
+Bem-vindo ao repositório que servirá como seu roadmap para dominar Lua, desde os conceitos básicos até técnicas mais avançadas. Aqui você encontrará um guia detalhado para aprender os fundamentos da linguagem rapidamente. Lua é uma linguagem de programação leve, fácil de aprender e extremamente versátil, sendo amplamente utilizada em jogos, aplicações embarcadas, scripts e muito mais. Este roadmap foi projetado para guiá-lo passo a passo, capacitando-o a explorar Lua de forma abrangente e eficiente.
 
-## 📚 Conteúdo
+## Por que e para quem é Lua?
+
+Lua é uma linguagem de programação que se destaca por sua leveza, flexibilidade e facilidade de integração. Ela é ideal para uma ampla gama de aplicações e atende a diversos perfis de usuários:
+
+1. **Desenvolvedores de Jogos:** Lua é amplamente utilizada na indústria de jogos como uma linguagem de script para desenvolvimento rápido de jogos e prototipagem. Sua sintaxe simples e poderosa, juntamente com sua capacidade de ser facilmente integrada a motores de jogos populares como Unity e Corona SDK, a tornam uma escolha popular para Game Developers.
+
+2. **Programadores de Aplicações Embarcadas:** Devido à sua leveza e eficiência, Lua é frequentemente utilizada em dispositivos embarcados e sistemas integrados. Ela permite o desenvolvimento de aplicações com baixo consumo de recursos, tornando-a uma escolha atraente para dispositivos IoT, sistemas de automação residencial, roteadores e muito mais.
+
+3. **Scripting em Aplicações:** Lua é frequentemente incorporada em outros softwares como uma linguagem de script. Ela é usada para criar scripts de automação, esticar a funcionalidade de apps e personalizar o comportamento de programas.
+
+4. **Aprendizes e Entusiastas:** Lua é uma ótima linguagem para iniciantes devido à sua sintaxe simples e conceitos de programação claros. Ela é frequentemente recomendada como uma linguagem de entrada para aqueles que desejam aprender programação pela primeira vez devido à sua facilidade de compreensão e implementação.
+
+5. **Linguagem Brasileira:** Lua é uma linguagem brasileira de programação projetada pelo Instituto Tecgraf da PUC-Rio em 1993!
+
+Independentemente do seu campo de atuação ou nível de habilidade, Lua oferece uma poderosa e acessível opção para o desenvolvimento de uma variedade de projetos.
+
+### 📚 Conteúdo
 
 O guia está organizado em tópicos, abrangendo os conceitos essenciais da linguagem. Cada tópico é coberto em um arquivo separado, facilitando a navegação e o aprendizado. Aqui está uma visão geral do conteúdo do guia:
 
-1. Introdução a Lua
+1. [Introdução a Lua](Introdução%20a%20Lua/README.md)
    - História e características
    - Ambiente de execução
    - Sintaxe básica
+
 
 2. Tipos de Dados
    - Números e operações matemáticas
