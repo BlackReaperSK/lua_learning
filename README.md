@@ -23,10 +23,9 @@ Independentemente do seu campo de atuação ou nível de habilidade, Lua oferece
 O guia está organizado em tópicos, abrangendo os conceitos essenciais da linguagem. Cada tópico é coberto em um arquivo separado, facilitando a navegação e o aprendizado. Aqui está uma visão geral do conteúdo do guia:
 
 1. [Introdução a Lua](Introdução%20a%20Lua/README.md)
-   - História e características
+   - Características
    - Ambiente de execução
    - Sintaxe básica
-
 
 2. Tipos de Dados
    - Números e operações matemáticas
