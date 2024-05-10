@@ -1,6 +1,6 @@
 # 🌙 Lua - Guia Básico
 
-Bem-vindo ao repositório que servirá como seu roadmap para dominar Lua, desde os conceitos básicos até técnicas mais avançadas. Aqui você encontrará um guia detalhado para aprender os fundamentos da linguagem rapidamente. Lua é uma linguagem de programação leve, fácil de aprender e extremamente versátil, sendo amplamente utilizada em jogos, aplicações embarcadas, scripts e muito mais. Este roadmap foi projetado para guiá-lo passo a passo, capacitando-o a explorar Lua de forma abrangente e eficiente.
+Bem-vindo ao repositório que servirá como seu roadmap para dominar Lua, desde os conceitos básicos até técnicas mais avançadas. Aqui você encontrará um guia detalhado para aprender os fundamentos da linguagem rapidamente. Lua é uma linguagem de programação leve, fácil de aprender e extremamente versátil, sendo amplamente utilizada em jogos, aplicações embarcadas, scripts e muito mais.
 
 ## Por que e para quem é Lua?
 
