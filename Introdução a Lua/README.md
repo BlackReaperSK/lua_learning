@@ -89,22 +89,17 @@ Durante todos os artigos, vamos considerar o uso no Linux. Para executar arquivo
 3. **Salve o arquivo:**
    - Salve o arquivo com o código Lua.
 
-4. **Abra o terminal:**
-   - Abra o terminal no Linux.
-
-5. **Navegue até o diretório do arquivo Lua:**
+4. **Navegue até o diretório do arquivo Lua:**
    - Use o comando `cd` para navegar até o diretório onde o arquivo Lua está localizado. Por exemplo:
      ```bash
      cd /caminho/do/diretorio
      ```
 
-6. **Execute o programa Lua:**
+5. **Execute o programa Lua:**
    - No terminal, use o comando `lua` seguido do nome do arquivo Lua que você deseja executar. Por exemplo:
      ```bash
      lua meu_programa.lua
      ```
-
-7. **Veja a saída:**
    - O programa Lua será executado e a saída será exibida no terminal. No exemplo acima, a saída será `Olá, mundo!`.
 
 # Sintaxe básica
